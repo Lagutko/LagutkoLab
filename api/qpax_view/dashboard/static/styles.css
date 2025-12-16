@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    width: 250px;
+    background: #1e1e1e;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* ВСЁ ВЫСТРАИВАЕМ В КОЛОНКУ */
+    align-items: center; /* Центрируем всё по центру */
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+}
+
+/* ОБЁРТКА ДЛЯ КНОПОК + ИЗОБРАЖЕНИЯ */
+.main-content {
+    display: flex;
+    flex-direction: column; /* Элементы идут ВНИЗ */
+    align-items: center;
+    width: 100%;
+}
+
+/* КНОПКИ В РЯД */
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Центрируем кнопки */
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px; /* Отступ перед изображением */
+    flex-wrap: nowrap;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+    width: 150px;
+    height: 120px;
+}
+
+.card .count {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card .total {
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+}
+
+/* ОБЁРТКА ДЛЯ ИЗОБРАЖЕНИЯ */
+.image-container {
+    display: flex;
+    justify-content: center; /* Центрируем */
+    width: 100%;
+    gap: 20px;
+}
+
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* КНОПКИ ДЛЯ СЕКТОРОВ */
+.sector-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.sector-button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.sector-button:hover {
+    background: #0056b3;
+}
+
+/* ОБЁРТКА ДЛЯ КНОПОК СЕКТОРОВ */
+.zone-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* КНОПКИ ДЛЯ ПРОХОДОВ (ПАСПОРТНЫЙ КОНТРОЛЬ, СТОЙКИ) */
+.passport-buttons, .registration-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* КАРТОЧКИ-ПЕРЕКЛЮЧАТЕЛИ */
+.card {
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #f0f0f0;
+}
+
+/* СТИЛИ ДЛЯ ИЗОБРАЖЕНИЙ СЕКТОРОВ */
+.sector-image {
+    display: none;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
